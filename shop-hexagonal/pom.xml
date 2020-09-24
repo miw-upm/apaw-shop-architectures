@@ -11,7 +11,21 @@
     </parent>
 
     <artifactId>shop-hexagonal</artifactId>
-	<packaging>jar</packaging>
-	<name>${project.groupId}.${project.artifactId}</name>
+    <packaging>jar</packaging>
+    <name>${project.groupId}.${project.artifactId}</name>
+
+    <dependencies>
+        <!-- Web asynchronous programming -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
+        </dependency>
+        <!-- OpenAPI http://localhost:8080/swagger-ui.html-->
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-webflux-ui</artifactId>
+            <version>${springdoc-openapi-webflux-ui.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
