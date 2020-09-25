@@ -1,0 +1,17 @@
+#Suggestions
+extend type Query {
+    suggestions(negative: Boolean): [Suggestion]
+}
+extend type Mutation {
+    createSuggestion(suggestion: SuggestionInput):Suggestion
+}
+input SuggestionInput{
+    negative: Boolean,
+    description: String
+}
+type Suggestion{
+    id: String,
+    negative: Boolean,
+    description: String
+}
+

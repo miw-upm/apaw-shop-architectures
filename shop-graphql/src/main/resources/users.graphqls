@@ -1,0 +1,49 @@
+#Themes
+extend type Mutation {
+    createTheme(themeCreation:ThemeCreation):Theme
+}
+
+input ThemeCreation {
+    reference:String,
+    userId:String
+}
+
+type Theme{
+    id: String,
+    reference: String,
+    date: String,
+    user: User,
+    votes: [Vote]
+}
+
+type Vote {
+    value: Int,
+    date:String
+}
+
+#Users
+extend type Query {
+    users:[User],
+    user(nick: String): User,
+}
+extend type Mutation {
+    createUser(nick:String!,email:String,address:AddressInput):User
+    updateUser(nick:String,email:String,address:AddressInput):User
+    deleteUser(nick:String): Int
+}
+type User{
+    id: String,
+    nick: String!,
+    email: String,
+    address: Address
+}
+type Address{
+    country: String,
+    city:String,
+    street:String
+}
+input AddressInput{
+    country: String,
+    city:String,
+    street:String
+}

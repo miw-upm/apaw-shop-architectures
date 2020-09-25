@@ -1,0 +1,10 @@
+schema {
+    query:Query
+    mutation:Mutation
+}
+type Query{
+    hello: String!
+}
+type Mutation {
+    createPerson(name: String!, age: Int=18): String!
+}
