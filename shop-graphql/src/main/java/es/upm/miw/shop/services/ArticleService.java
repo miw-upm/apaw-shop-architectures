@@ -2,8 +2,8 @@ package es.upm.miw.shop.services;
 
 import es.upm.miw.shop.data.ArticleEntity;
 import es.upm.miw.shop.data.ArticleRepository;
-import es.upm.miw.shop.rest.ConflictException;
-import es.upm.miw.shop.rest.NotFoundException;
+import es.upm.miw.shop.graphql.exceptions.ConflictException;
+import es.upm.miw.shop.graphql.exceptions.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,0 +1,30 @@
+#Article
+extend type Query {
+    articles:[Article]
+    findArticlesByProviderAndPriceGreaterThan(q:String):[Article]
+}
+extend type Mutation {
+    createArticle(articleCreation:ArticleCreation):Article
+    updatePricesArticles(articlePriceUpdatingList:[ArticlePriceUpdating]):ID
+}
+
+input ArticleCreation {
+    barcode: Int!
+    description: String!
+    price: String
+    provider:String
+}
+
+input ArticlePriceUpdating {
+    barcode:Int
+    price: String
+}
+
+type Article {
+    id: String
+    registrationDate: String
+    barcode: Int
+    description: String
+    price: String
+    provider:String
+}

@@ -1,0 +1,16 @@
+#Tag
+extend type Query {
+    readTag(id:String):Tag
+    findTagByArticlesInShoppingCarts(q:String):[Tag]
+}
+
+extend type Mutation {
+    deleteTag(id:String):ID
+}
+
+type Tag {
+    id: String
+    description: String
+    articleEntities:[Article]
+    favourite: Boolean
+}

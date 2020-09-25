@@ -1,0 +1,57 @@
+query {
+  articles {
+    id
+    price
+    barcode
+    registrationDate
+  }
+}
+
+query {
+  articles {
+    id
+  }
+}
+
+mutation {
+  createArticle(articleCreation:{barcode: 1, description: "d", price: "1.2", provider: "p"}) {
+    id
+    barcode
+    registrationDate
+    price
+  }
+}
+
+mutation {
+  updatePricesArticles (articlePriceUpdatingList: [{barcode:84001,price:"69"},{barcode:84002,price:"69"}])
+}
+
+query {
+  findArticlesByProviderAndPriceGreaterThan(q:"provider:prov 1;price:1") {
+    id
+    price
+    barcode
+    registrationDate
+  }
+}
+
+query {
+  readTag(id: "tag2") {
+    id
+    description
+    articleEntities {
+      barcode
+    }
+  }
+}
+
+mutation {
+  deleteTag(id:"tag2")
+}
+
+query{
+  findTagByArticlesInShoppingCarts(q:"shopping-carts:in"){
+    id
+    description
+  }
+}
