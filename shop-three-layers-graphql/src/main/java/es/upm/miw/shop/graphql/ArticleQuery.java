@@ -21,12 +21,12 @@ public class ArticleQuery implements GraphQLQueryResolver {
         this.articleService = articleService;
     }
 
-    public List<ArticleEntity> articles (){
+    public List<ArticleEntity> articles() {
         return this.articleService.readAll()
-               .collect(Collectors.toList());
+                .collect(Collectors.toList());
     }
 
-    public List<ArticleEntity> findArticlesByProviderAndPriceGreaterThan(String q){
+    public List<ArticleEntity> findArticlesByProviderAndPriceGreaterThan(String q) {
         String provider = new LexicalAnalyzer().extractWithAssure(q, "provider");
         BigDecimal price = new LexicalAnalyzer().extractWithAssure(q, "price", BigDecimal::new);
         return this.articleService.findByProviderAndPriceGreaterThan(provider, price)

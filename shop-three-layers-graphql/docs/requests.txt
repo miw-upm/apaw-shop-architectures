@@ -55,3 +55,30 @@ query{
     description
   }
 }
+
+query{
+  findShoppingCartByPriceGreaterThan(q:"price:5.0"){
+    id
+    articleItemEntities{
+      articleEntity{
+        barcode
+      }
+      amount
+      discount
+    }
+  }
+}
+
+mutation {
+  updateShoppingCartArticleItems(id:"19e65fe8-78fb-460a-a29e-2196a3b87258",
+      articleItemList:[{barcode:84003,amount:2,discount:"0"}]){
+    id
+    articleItemEntities {
+      articleEntity {
+        barcode
+      }
+      amount
+      discount
+    }
+  }
+}

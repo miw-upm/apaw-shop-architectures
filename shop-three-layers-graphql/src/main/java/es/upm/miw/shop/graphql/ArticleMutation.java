@@ -19,7 +19,7 @@ public class ArticleMutation implements GraphQLMutationResolver {
         this.articleService = articleService;
     }
 
-    public ArticleEntity createArticle(ArticleEntity articleEntity ) {
+    public ArticleEntity createArticle(ArticleEntity articleEntity) {
         return this.articleService.create(articleEntity);
     }
 

@@ -10,6 +10,7 @@ import java.util.Map;
 
 public class BadRequestException extends RuntimeException implements GraphQLError {
     private static final String DESCRIPTION = "Bad Request Exception";
+
     public BadRequestException(String detail) {
         super(DESCRIPTION + detail);
     }

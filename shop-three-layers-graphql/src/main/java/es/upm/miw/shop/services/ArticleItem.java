@@ -48,6 +48,10 @@ public class ArticleItem {
         this.discount = discount;
     }
 
+    public void setDiscount(String discount) {
+        this.discount = new BigDecimal(discount);
+    }
+
     @Override
     public String toString() {
         return "ArticleItem{" +

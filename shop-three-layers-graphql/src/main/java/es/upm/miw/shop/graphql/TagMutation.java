@@ -15,7 +15,7 @@ public class TagMutation implements GraphQLMutationResolver {
         this.tagService = tagService;
     }
 
-    public void deleteTag(String id){
+    public void deleteTag(String id) {
         this.tagService.deleteById(id);
     }
 

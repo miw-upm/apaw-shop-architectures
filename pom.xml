@@ -15,9 +15,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>shop-three-layers</module>
         <module>shop-hexagonal</module>
-        <module>shop-graphql</module>
+        <module>shop-three-layers-rest</module>
+        <module>shop-three-layers-graphql</module>
     </modules>
 
     <name>${project.groupId}.${project.artifactId}</name>

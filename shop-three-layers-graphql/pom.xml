@@ -10,7 +10,7 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>shop-three-layers</artifactId>
+    <artifactId>shop-three-layers-graphql</artifactId>
 	<packaging>jar</packaging>
 	<name>${project.groupId}.${project.artifactId}</name>
 
@@ -18,13 +18,23 @@
         <!-- Web asynchronous programming -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webflux</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <!-- OpenAPI http://localhost:8080/swagger-ui.html-->
+        <!-- GraphQL -->
         <dependency>
-            <groupId>org.springdoc</groupId>
-            <artifactId>springdoc-openapi-webflux-ui</artifactId>
-            <version>${springdoc-openapi-webflux-ui.version}</version>
+            <groupId>com.graphql-java-kickstart</groupId>
+            <artifactId>graphql-spring-boot-starter</artifactId>
+            <version>7.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.graphql-java-kickstart</groupId>
+            <artifactId>graphql-java-tools</artifactId>
+            <version>6.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.graphql-java-kickstart</groupId>
+            <artifactId>graphiql-spring-boot-starter</artifactId>
+            <version>7.0.1</version>
         </dependency>
     </dependencies>
 

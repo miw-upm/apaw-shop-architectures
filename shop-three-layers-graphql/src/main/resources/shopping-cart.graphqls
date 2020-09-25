@@ -1,0 +1,28 @@
+#shopping-cart
+extend type Query {
+    findShoppingCartByPriceGreaterThan(q:String):[ShoppingCart]
+}
+
+extend type Mutation {
+    updateShoppingCartArticleItems(id:String, articleItemList:[ArticleItemInput]):ShoppingCart
+}
+
+type ShoppingCart {
+    id:String
+    creationDate:String
+    articleItemEntities:[ArticleItem]
+    user: String
+    address:String
+}
+
+input ArticleItemInput {
+   barcode:Int
+   amount:Int
+   discount:String
+}
+
+type ArticleItem {
+    articleEntity:Article
+    amount: Int
+    discount: String
+}

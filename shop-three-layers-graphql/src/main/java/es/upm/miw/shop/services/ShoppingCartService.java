@@ -32,8 +32,8 @@ public class ShoppingCartService {
 
     public ShoppingCartEntity readById(String id) {
         return this.shoppingCartRepository
-                        .findById(id)
-                        .orElseThrow(() -> new NotFoundException("ShoppingCart id:" + id));
+                .findById(id)
+                .orElseThrow(() -> new NotFoundException("ShoppingCart id:" + id));
     }
 
     public ShoppingCartEntity update(String id, String user, String address) {
