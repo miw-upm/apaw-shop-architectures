@@ -3,7 +3,7 @@
 > Este proyecto es un apoyo docente de la asignatura y un ejemplo práctico del desarrollo de una aplicación Web siguiendo varias arquitecturas
 
 ### Tecnologías necesarias
-`Java` `Maven` `GitHub` `Spring-boot` 
+`Java` `Maven` `GitHub` `Spring-boot` `graphql`
 
 ### :gear: Instalación del proyecto
 1. Clonar el repositorio en tu equipo, **mediante consola**:

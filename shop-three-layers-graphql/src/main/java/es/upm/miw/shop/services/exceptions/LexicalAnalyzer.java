@@ -1,4 +1,4 @@
-package es.upm.miw.shop.graphql.exceptions;
+package es.upm.miw.shop.services.exceptions;
 
 import java.util.function.Function;
 import java.util.stream.Stream;

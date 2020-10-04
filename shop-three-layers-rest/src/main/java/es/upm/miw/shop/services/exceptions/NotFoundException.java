@@ -1,4 +1,4 @@
-package es.upm.miw.shop.rest;
+package es.upm.miw.shop.services.exceptions;
 
 public class NotFoundException extends RuntimeException {
     private static final String DESCRIPTION = "Not Found Exception (404)";

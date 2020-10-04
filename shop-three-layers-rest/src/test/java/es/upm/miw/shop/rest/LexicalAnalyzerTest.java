@@ -1,5 +1,6 @@
 package es.upm.miw.shop.rest;
 
+import es.upm.miw.shop.services.exceptions.BadRequestException;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;

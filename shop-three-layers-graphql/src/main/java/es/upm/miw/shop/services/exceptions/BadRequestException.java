@@ -1,4 +1,4 @@
-package es.upm.miw.shop.graphql.exceptions;
+package es.upm.miw.shop.services.exceptions;
 
 import graphql.ErrorType;
 import graphql.GraphQLError;
@@ -8,10 +8,10 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-public class ConflictException extends RuntimeException implements GraphQLError {
-    private static final String DESCRIPTION = "Conflict Exception. ";
+public class BadRequestException extends RuntimeException implements GraphQLError {
+    private static final String DESCRIPTION = "Bad Request Exception";
 
-    public ConflictException(String detail) {
+    public BadRequestException(String detail) {
         super(DESCRIPTION + detail);
     }
 

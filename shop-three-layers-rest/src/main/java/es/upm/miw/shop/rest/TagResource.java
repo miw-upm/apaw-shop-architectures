@@ -1,6 +1,7 @@
 package es.upm.miw.shop.rest;
 
 import es.upm.miw.shop.rest.dtos.Tag;
+import es.upm.miw.shop.services.exceptions.BadRequestException;
 import es.upm.miw.shop.services.TagService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

@@ -1,5 +1,9 @@
 package es.upm.miw.shop.rest;
 
+import es.upm.miw.shop.services.exceptions.BadRequestException;
+import es.upm.miw.shop.services.exceptions.ConflictException;
+import es.upm.miw.shop.services.exceptions.ErrorMessage;
+import es.upm.miw.shop.services.exceptions.NotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;

@@ -1,5 +1,7 @@
 package es.upm.miw.shop.rest;
 
+import es.upm.miw.shop.services.exceptions.BadRequestException;
+
 import java.util.function.Function;
 import java.util.stream.Stream;
 

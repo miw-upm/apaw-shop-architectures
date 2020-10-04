@@ -1,4 +1,4 @@
-package es.upm.miw.shop.rest;
+package es.upm.miw.shop.services.exceptions;
 
 public class ErrorMessage {
 

@@ -2,17 +2,17 @@ package es.upm.miw.shop.graphql;
 
 import java.math.BigDecimal;
 
-public class ArticleCreation {
+public class ArticleCreationDto {
     private Long barcode;
     private String description;
     private BigDecimal price;
     private String provider;
 
-    public ArticleCreation() {
+    public ArticleCreationDto() {
         //empty for framework
     }
 
-    public ArticleCreation(Long barcode, String description, BigDecimal price, String provider) {
+    public ArticleCreationDto(Long barcode, String description, BigDecimal price, String provider) {
         this.barcode = barcode;
         this.description = description;
         this.price = price;
@@ -53,7 +53,7 @@ public class ArticleCreation {
 
     @Override
     public String toString() {
-        return "ArticleCreation{" +
+        return "ArticleCreationDto{" +
                 "barcode=" + barcode +
                 ", description='" + description + '\'' +
                 ", price=" + price +

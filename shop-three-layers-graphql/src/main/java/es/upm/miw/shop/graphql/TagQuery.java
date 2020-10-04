@@ -1,8 +1,8 @@
 package es.upm.miw.shop.graphql;
 
 import es.upm.miw.shop.data.TagEntity;
-import es.upm.miw.shop.graphql.exceptions.BadRequestException;
-import es.upm.miw.shop.graphql.exceptions.LexicalAnalyzer;
+import es.upm.miw.shop.services.exceptions.BadRequestException;
+import es.upm.miw.shop.services.exceptions.LexicalAnalyzer;
 import es.upm.miw.shop.services.TagService;
 import graphql.kickstart.tools.GraphQLQueryResolver;
 import org.springframework.beans.factory.annotation.Autowired;

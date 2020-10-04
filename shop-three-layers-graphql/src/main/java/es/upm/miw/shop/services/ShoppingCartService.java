@@ -4,7 +4,7 @@ import es.upm.miw.shop.data.ArticleItemEntity;
 import es.upm.miw.shop.data.ArticleRepository;
 import es.upm.miw.shop.data.ShoppingCartEntity;
 import es.upm.miw.shop.data.ShoppingCartRepository;
-import es.upm.miw.shop.graphql.exceptions.NotFoundException;
+import es.upm.miw.shop.services.exceptions.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,7 +1,7 @@
 package es.upm.miw.shop.graphql;
 
 import es.upm.miw.shop.data.ArticleEntity;
-import es.upm.miw.shop.graphql.exceptions.LexicalAnalyzer;
+import es.upm.miw.shop.services.exceptions.LexicalAnalyzer;
 import es.upm.miw.shop.services.ArticleService;
 import graphql.kickstart.tools.GraphQLQueryResolver;
 import org.springframework.beans.factory.annotation.Autowired;

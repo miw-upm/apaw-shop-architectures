@@ -1,7 +1,7 @@
 package es.upm.miw.shop.services;
 
 import es.upm.miw.shop.data.*;
-import es.upm.miw.shop.graphql.exceptions.NotFoundException;
+import es.upm.miw.shop.services.exceptions.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
